@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+        s = s.trim();
+        if(s.length() <= 0 || s == "") {
+            System.out.println("0");
+        }
+        else if(s.length() > 400000) {
+            return;
+        }
+        else {
+            String delims = "[ !,?._'@]+";
+            String[] tokens = s.split(delims);
+            int size = tokens.length;
+            System.out.println(size);
+            for(String item: tokens) {
+                System.out.println(item);
+            }
+        }
+        scan.close();
+    }
+}
