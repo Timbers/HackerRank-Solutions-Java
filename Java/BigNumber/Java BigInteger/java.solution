@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+import java.math.BigInteger;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        String first = scan.nextLine();
+        String second = scan.nextLine();
+        scan.close();
+
+        BigInteger a = new BigInteger(first);
+        BigInteger b = new BigInteger(second);
+
+        System.out.println(a.add(b));
+        System.out.println(a.multiply(b));
+    }
+}
